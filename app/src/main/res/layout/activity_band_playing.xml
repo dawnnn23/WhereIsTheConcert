@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BandPlayingActivityClasses.BandPlayingActivity"
+    android:background="#dcf2f1">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:background="#cce8e7"
+             android:layout_height="match_parent">
+
+             <ImageView
+                 android:id="@+id/imageView"
+                 android:layout_width="480dp"
+                 android:layout_height="300dp"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentTop="true"
+                 android:scaleType="centerCrop" />
+
+             <ProgressBar
+                 android:id="@+id/progressBar"
+                 style="?android:attr/progressBarStyleLarge"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"/>
+
+             <TextView
+                 android:id="@+id/tvName"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBottom="@id/imageView"
+                 android:layout_centerHorizontal="true"
+                 android:background="#558DAC"
+                 android:textAlignment="center"
+                 android:textColor="@color/white"
+                 android:textSize="24sp"
+                 android:paddingLeft="5dp"
+                 android:paddingRight="5dp"
+                 android:layout_marginBottom="15dp"/>
+         </RelativeLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@color/colorPrimary"
+                 android:textColor="@color/white"
+                 android:padding="10dp"
+                 android:text="@string/tickets"
+                 android:textSize="18sp" />
+
+             <ImageButton
+                 android:id="@+id/btnToTickets"
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:background="@android:color/transparent"
+                 android:scaleType="fitCenter"
+                 android:src="@drawable/tm_verified_logo"
+                 android:layout_margin="10dp"/>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@color/colorPrimary"
+                 android:textColor="@color/white"
+                 android:padding="10dp"
+                 android:text="@string/details"
+                 android:textSize="18sp" />
+
+             <TextView
+                 android:id="@+id/tvDate"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:drawableStart="@drawable/ic_date"
+                 android:drawablePadding="10dp"
+                 android:padding="10dp"
+                 android:textSize="16sp" />
+
+             <TextView
+                 android:id="@+id/tvVenue"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:drawableStart="@drawable/ic_place"
+                 android:drawablePadding="10dp"
+                 android:padding="10dp"
+                 android:textSize="16sp" />
+         </LinearLayout>
+
+
+     </LinearLayout>
+
+</ScrollView>
